@@ -7,16 +7,16 @@ body {
   background: url("../images/background.png");
 }
 
-/* Change the background color of the logo */
 .navbar-default .navbar-brand {
+  /* Change the background color of the logo */
   color: white;
   background: #4aaaa5;
   font-weight: bolder;
   font-size: 1.5em;
 }
 
-/* Keep the logo consistatnt when mousover */
 .navbar-default .navbar-brand:hover {
+  /* Keep the logo consistatnt when mousover */
   color: white;
   background: #4aaaa5;
   font-weight: bolder;
@@ -24,11 +24,11 @@ body {
   cursor: default;
 }
 
-h1 {
+.panel-heading h1 {
   /* default heading font settings per recommended-homework-assignment.md */
   font-family: "Georgia", "Times", "Times New Roman", "serif";
   color: #4aaaa5;
-  font-weight: bold;
+  font-weight: bolder;
   font-size: 2em;
 }
 
@@ -43,13 +43,9 @@ h1 {
 }
 
 .social .img-responsive {
+  /* Sets the width of the connect with me social logos while keeping them responsive */
   max-width: 30%;
   max-width: auto;
-}
-
-.social {
-  /* Overwrites the <a> element and removes the annoying underline between the logo images */
-  text-decoration: none;
 }
 
 .contact img {
@@ -69,8 +65,8 @@ h1 {
 
 /* ---------------------------- FOOTER ---------------------------- */
 
-/* Custom styling to keep it in line with theme */
 #footerCSS {
+  /* Custom styling to keep footer element in line with theme */
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -79,8 +75,8 @@ h1 {
   border-top: 10px solid #4aaaa5;
 }
 
-/* Keeps footer consistant when mousing over the link */
 #footerCSS a {
+  /* Keeps footer consistant when mousing over the link */
   text-align: center;
   color: #acacac;
   text-decoration: none;
@@ -89,30 +85,66 @@ h1 {
 /* ---------------------------- INDEX.HTML STYLING ---------------------------- */
 
 #profilePic {
+  /* Sets margins for photo so text wraps neatly */
   margin-right: 20px;
   margin-bottom: 10px;
 }
 
 .aboutMe .img-responsive {
+  /* Keeps the photo desired size while maintaining it's responsiveness */
   max-width: 50%;
   max-width: auto;
 }
 
 /* ---------------------------- PORTFOLIO.HTML STYLING ---------------------------- */
-.thumbnail {
-  position: relative;
-  width: 50%;
-}
 
+/* PLEASE REVISIT THIS! WHEN CSS IS NOT ABSOLUTE (BANNER AT BASE OF PIC) IT'S CORRECT WIDTH, WHEN ABOLUTE IT GETS WIDER ON THE RIGHT */
 .caption {
+  /* Sets the banner text over the portfolio images */
+  clear: both;
+  bottom: 10%;
   position: absolute;
-  top: 45%;
-  left: 0;
-  width: 100%;
   background: #4aaaa5;
-  color: white;
-  font-size: 1.5em;
+  font-size: 2em;
+  width: 99%;
   font-weight: bolder;
 }
 
+.bannerColor {
+  /* Keeping text over photo color in like with current theme */
+  color: white;
+  font-weight: bolder;
+}
+
+.thumbnail {
+  /* allows text to be placed on top of this element */
+  position: relative;
+}
+
+.container .portfolio {
+  /* Adds a white background to the element */
+  background: white;
+}
+
 /* ---------------------------- CONTACT.HTML STYLING ---------------------------- */
+
+/* Prevents the user from making the text area wider for better UX */
+textarea {
+  resize: vertical;
+}
+
+/* Styling for the form area */
+.form-area {
+  background-color: #fafafa;
+  padding: 10px 40px 60px;
+  margin: 10px 0px 60px;
+  border: 1px solid GREY;
+}
+
+.form-area h1 {
+  /* default heading font settings per recommended-homework-assignment.md */
+  font-family: "Georgia", "Times", "Times New Roman", "serif";
+  color: #4aaaa5;
+  font-weight: bolder;
+  font-size: 2em;
+}
