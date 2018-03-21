@@ -15,6 +15,10 @@ body {
   font-size: 1.5em;
 }
 
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+  margin-left: 0;
+}
+
 .navbar-default .navbar-brand:hover {
   /* Keep the logo consistatnt when mousover */
   color: white;
@@ -65,6 +69,10 @@ body {
 
 /* ---------------------------- FOOTER ---------------------------- */
 
+main.container {
+  margin-bottom: 50px;
+}
+
 #footerCSS {
   /* Custom styling to keep footer element in line with theme */
   position: absolute;
@@ -101,12 +109,12 @@ body {
 /* PLEASE REVISIT THIS! WHEN CSS IS NOT ABSOLUTE (BANNER AT BASE OF PIC) IT'S CORRECT WIDTH, WHEN ABOLUTE IT GETS WIDER ON THE RIGHT */
 .caption {
   /* Sets the banner text over the portfolio images */
-  clear: both;
+  left: 4px;
+  right: 4px;
   bottom: 10%;
   position: absolute;
   background: #4aaaa5;
   font-size: 2em;
-  width: 99%;
   font-weight: bolder;
 }
 
