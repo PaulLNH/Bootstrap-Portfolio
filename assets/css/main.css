@@ -15,7 +15,9 @@ body {
   font-size: 1.5em;
 }
 
-.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+.navbar > .container .navbar-brand,
+.navbar > .container-fluid .navbar-brand {
+  /* Moves logo in line with the rest of the elements on the page */
   margin-left: 0;
 }
 
@@ -23,8 +25,6 @@ body {
   /* Keep the logo consistatnt when mousover */
   color: white;
   background: #4aaaa5;
-  font-weight: bolder;
-  font-size: 1.5em;
   cursor: default;
 }
 
@@ -39,7 +39,7 @@ body {
 /* ---------------------------- CONNECT WITH ME SIDEBAR ---------------------------- */
 
 .panel-title {
-  /* default heading font settings per recommended-homework-assignment.md */
+  /* Heading settings for the connect with me sidebar */
   font-family: "Georgia", "Times", "Times New Roman", "serif";
   color: #4aaaa5;
   font-weight: bold;
@@ -70,22 +70,19 @@ body {
 /* ---------------------------- FOOTER ---------------------------- */
 
 main.container {
+  /* Adds a margin the height of the fixed footer to the bottom of the main element so the user can see the entire element */
   margin-bottom: 50px;
 }
 
 #footerCSS {
   /* Custom styling to keep footer element in line with theme */
-  position: absolute;
-  bottom: 0;
   width: 100%;
-  height: 60px;
   background-color: #666666;
   border-top: 10px solid #4aaaa5;
 }
 
 #footerCSS a {
   /* Keeps footer consistant when mousing over the link */
-  text-align: center;
   color: #acacac;
   text-decoration: none;
 }
@@ -109,12 +106,12 @@ main.container {
 /* PLEASE REVISIT THIS! WHEN CSS IS NOT ABSOLUTE (BANNER AT BASE OF PIC) IT'S CORRECT WIDTH, WHEN ABOLUTE IT GETS WIDER ON THE RIGHT */
 .caption {
   /* Sets the banner text over the portfolio images */
+  /* left and right account for boostraps baseline margins to remove the 8px overlap of the images */
   left: 4px;
   right: 4px;
   bottom: 10%;
   position: absolute;
   background: #4aaaa5;
-  font-size: 2em;
   font-weight: bolder;
 }
 
@@ -129,23 +126,19 @@ main.container {
   position: relative;
 }
 
-.container .portfolio {
-  /* Adds a white background to the element */
-  background: white;
-}
-
 /* ---------------------------- CONTACT.HTML STYLING ---------------------------- */
 
-/* Prevents the user from making the text area wider for better UX */
 textarea {
+  /* Prevents the user from making the text area wider for better UX */
   resize: vertical;
 }
 
-/* Styling for the form area */
 .form-area {
+  /* Styling for the form area */
   background-color: #fafafa;
   padding: 10px 40px 60px;
-  margin: 10px 0px 60px;
+  /* 60px margin bottom to account for fixed footer */
+  margin-bottom: 60px;
   border: 1px solid GREY;
 }
 

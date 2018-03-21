@@ -2,128 +2,137 @@
 <html>
 
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Paul's Portfolio Page</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Latest compiled and minified CSS -->
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous"> -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-    crossorigin="anonymous">
-  <!-- Customer CSS to over-ride Bootstrap -->
-  <link rel="stylesheet" type="text/css" media="screen" href="assets/css/main.css" />
-  <!-- <script src="main.js"></script> -->
-  <!-- <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Paul's Portfolio Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Compiled and minified bootstrap 3.3.7 sourced from CDN: https://getbootstrap.com/docs/3.3/getting-started/ -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <!-- CSS over-ride for Bootstrap -->
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/main.css" />
+
 </head>
 
 <body>
-  <!-- START NAVBAR -->
-
-  <nav class="navbar navbar-default navbar-static-top">
-    <div class="container">
-      <!-- Logo -->
-      <a class="navbar-brand navbar-custom" href="#">Paul Laird</a>
-      <!-- Menu items -->
-      <ul class="nav navbar-nav navbar-right">
-        <li>
-          <a href="index.html">About</a>
-        </li>
-        <li>
-          <a href="portfolio.html">Portfolio</a>
-        </li>
-        <li>
-          <a href="contact.html">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <!-- END OF NAVBAR -->
-
-  <!-- Main body of the webpage -->
-  <div class="container">
-    <!-- Row 1 of 2 (For the content of the webpage) -->
-    <div class="row">
-      <div class="col-md-8">
-
-        <!-- START OF THE CONNECT WITH ME ELEMENT -->
-        <div class="form-area">
-          <!-- Form action set to mailto the below IDs, will not send the email with just HTML/CSS -->
-          <form action="mailto:plaird83@gmail.com" method="post" enctype="text/plain">
-            <!-- Header for the connect with me section -->
-            <h1 style="margin-bottom: 25px; text-align: center;">Contact Me</h1>
-            <div class="form-group">
-              <!-- User input name -->
-              <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
-            </div>
-            <div class="form-group">
-              <!-- User input email -->
-              <input type="text" class="form-control" id="email" name="email" placeholder="Email" required>
-            </div>
-            <div class="form-group">
-              <!-- User input subject of message -->
-              <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
-            </div>
-            <div class="form-group">
-              <!-- User input of message body -->
-              <textarea class="form-control" type="textarea" id="message" placeholder="Message" rows="7"></textarea>
-            </div>
-            <!-- Button opens email clinet and populate the above IDs as context, user has to send manually -->
-            <button type="submit" name="submit" class="btn btn-primary pull-right">Submit Form</button>
-          </form>
+    <!-- NAVBAR CODE BETWEEN THESE LINES -->
+    <nav class="navbar navbar-default navbar-static-top">
+        <!-- Navbar container -->
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand navbar-custom" href="#">Paul Laird</a>
+            <!-- Menu items -->
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="index.html">About</a>
+                </li>
+                <li>
+                    <a href="portfolio.html">Portfolio</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+                <!-- End of Menu items -->
+            </ul>
+            <!-- End of Navbar container -->
         </div>
+    </nav>
+    <!-- NAVBAR CODE BETWEEN THESE LINES -->
 
-      </div>
-      <!-- End of the ontainer for the portfolio -->
-      <!-- END OF ABOUT ME SECTION -->
+    <!-- Main body container -->
+    <main class="container">
+        <!-- Start of first -->
+        <div class="row">
 
-      <!-- Connect with me section -->
-      <div class="contact">
-        <div class="col-md-4">
-          <div class="panel panel-default text-center">
-            <div class="panel-heading">
-              <h2 class="panel-title">Connect with me</h2>
+            <!-- Contact Me columns -->
+            <div class="col-md-8">
+                <!-- Contact Me section -->
+                <div class="form-area">
+                    <!-- Form action set to mailto the below IDs, will not send the email with just HTML/CSS -->
+                    <form action="mailto:plaird83@gmail.com" method="post" enctype="text/plain">
+                        <!-- Header for the connect with me section -->
+                        <h1 style="margin-bottom: 25px; text-align: center;">Contact Me</h1>
+                        <div class="form-group">
+                            <!-- User input name -->
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
+                        </div>
+                        <div class="form-group">
+                            <!-- User input email -->
+                            <input type="text" class="form-control" id="email" name="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <!-- User input subject of message -->
+                            <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <!-- User input of message body -->
+                            <textarea class="form-control" type="textarea" id="message" placeholder="Message" rows="7"></textarea>
+                        </div>
+                        <!-- Button opens email clinet and populate the above IDs as context, user has to send manually -->
+                        <button type="submit" name="submit" class="btn btn-primary pull-right">Submit Form</button>
+                    </form>
+                    <!-- End of Contact Me section -->
+                </div>
+                <!-- End of Contact Me columns -->
             </div>
-            <div class="panel-body">
-              <!-- LINKS IN THE CONNECT WITH ME SECTION GO BETWEEN THESE LINES -->
-              <!-- GitHub link -->
-              <a class="social" href="https://github.com/PaulLNH" target="_blank">
-                <!-- GitHub logo -->
-                <img class="img-thumbnail img-responsive" src="assets/images/github.png" alt="Check out my GitHub!">
-              </a>
-              <!-- LinkedIn link -->
-              <a class="social" href="https://www.linkedin.com/in/paul-laird/" target="_blank">
-                <!-- LinkedIn logo -->
-                <img class="img-thumbnail img-responsive" src="assets/images/linkedin.png" alt="Follow me on LinkedIn.">
-              </a>
-              <!-- Stack Overflow link -->
-              <a class="social" href="https://stackoverflow.com/story/paullaird" target="_blank">
-                <!-- Stack Overflow logo -->
-                <img class="img-thumbnail img-responsive" src="assets/images/stackoverflow.png" alt="See what I have to say on Stack Overflow">
-              </a>
-              <!-- LINKS IN THE CONNECT WITH ME SECTION GO BETWEEN THESE LINES -->
+
+            <!-- Connect with me section -->
+            <div class="contact">
+                <!-- Connect with me columns -->
+                <div class="col-md-4">
+                    <!-- Connect with me panel -->
+                    <div class="panel panel-default text-center">
+                        <!-- Connect with me pannel header -->
+                        <div class="panel-heading">
+                            <h2 class="panel-title">Connect with me</h2>
+                            <!-- End of Connect with me pannel header -->
+                        </div>
+                        <!-- Connect with me panel body -->
+                        <div class="panel-body">
+                            <!-- LINKS IN THE CONNECT WITH ME SECTION GO BETWEEN THESE LINES -->
+                            <!-- GitHub link -->
+                            <a class="social" href="https://github.com/PaulLNH" target="_blank">
+                                <!-- GitHub logo -->
+                                <img class="img-thumbnail img-responsive" src="assets/images/github.png" alt="Check out my GitHub!">
+                            </a>
+                            <!-- LinkedIn link -->
+                            <a class="social" href="https://www.linkedin.com/in/paul-laird/" target="_blank">
+                                <!-- LinkedIn logo -->
+                                <img class="img-thumbnail img-responsive" src="assets/images/linkedin.png" alt="Follow me on LinkedIn.">
+                            </a>
+                            <!-- Stack Overflow link -->
+                            <a class="social" href="https://stackoverflow.com/story/paullaird" target="_blank">
+                                <!-- Stack Overflow logo -->
+                                <img class="img-thumbnail img-responsive" src="assets/images/stackoverflow.png" alt="See what I have to say on Stack Overflow">
+                            </a>
+                            <!-- LINKS IN THE CONNECT WITH ME SECTION GO BETWEEN THESE LINES -->
+                            <!-- End of Connect with me panel body -->
+                        </div>
+                        <!-- End of Connect with me pannel -->
+                    </div>
+                    <!-- End of Connect with me columns -->
+                </div>
+                <!-- End of connect with me section -->
             </div>
-          </div>
+            <!-- End of first row -->
         </div>
-      </div>
+        <!-- End of main body container -->
+    </main>
 
-      <!-- END OF 1st ROW -->
-    </div>
-    <!-- End of the container -->
-  </div>
-
-
-
-  <!-- BELOW IS THE FOOTER -->
-
-  <footer class="navbar navbar-default navbar-fixed-bottom">
-    <div class="container" id="footerCSS">
-      <p class="navbar-text text-center">
-        <a href="http://laird.codes" target="_blank">© 2018 - Paul Laird</a>
-      </p>
-    </div>
-  </footer>
-
+    <!-- FOOTER CODE BETWEEN THESE LINES -->
+    <footer class="navbar navbar-default navbar-fixed-bottom">
+        <!-- Footer container -->
+        <div class="container" id="footerCSS">
+            <!-- Copywright information -->
+            <p class="navbar-text text-center">
+                <!-- Link back to portfolio page -->
+                <a href="http://laird.codes" target="_blank">© 2018 - Paul Laird</a>
+                <!-- End of Copywright information -->
+            </p>
+            <!-- End of Footer container -->
+        </div>
+    </footer>
+    <!-- FOOTER CODE BETWEEN THESE LINES -->
 
 </body>
 

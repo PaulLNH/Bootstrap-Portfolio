@@ -6,20 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Paul's Portfolio Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Latest compiled and minified CSS -->
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous"> -->
+    <!-- Compiled and minified bootstrap 3.3.7 sourced from CDN: https://getbootstrap.com/docs/3.3/getting-started/ -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
-    <!-- Customer CSS to over-ride Bootstrap -->
+    <!-- CSS over-ride for Bootstrap -->
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/main.css" />
-    <!-- <script src="main.js"></script> -->
-    <!-- <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
+
 </head>
 
 <body>
     <!-- NAVBAR CODE BETWEEN THESE LINES -->
     <nav class="navbar navbar-default navbar-static-top">
+        <!-- Navbar container -->
         <div class="container">
             <!-- Logo -->
             <a class="navbar-brand navbar-custom" href="#">Paul Laird</a>
@@ -34,29 +32,34 @@
                 <li>
                     <a href="contact.html">Contact</a>
                 </li>
+                <!-- End of Menu items -->
             </ul>
+            <!-- End of Navbar container -->
         </div>
     </nav>
     <!-- NAVBAR CODE BETWEEN THESE LINES -->
 
-
-
-    <!-- Main body of the webpage -->
-    <div class="container">
-        <!-- Row 1 of 2 (For the content of the webpage) -->
+    <!-- Main body container -->
+    <main class="container">
+        <!-- Start of first row -->
         <div class="row">
 
-            <!-- About me section -->
+            <!-- About me columns -->
             <div class="col-md-8">
+                <!-- About me section -->
                 <div class="aboutMe">
-                    <!-- Body of the About Me section -->
+                    <!-- About me panel -->
                     <div class="panel panel-default">
+                        <!-- About me panel header -->
                         <div class="panel-heading">
                             <h1 class="panel-title">About Me</h1>
+                            <!-- End of About me panel header -->
                         </div>
+                        <!-- About me panel body -->
                         <div class="panel-body">
                             <!-- Profile Picture -->
                             <img src="assets/images/paul.png" class="pull-left img-responsive" id="profilePic" />
+                            <!-- ABOUT ME MAIN BODY TEXT GO BETWEEN THESE LINES -->
                             <p>My name is Paul Laird, I’m a husband to a phenomenal wife, father of three awesome children,
                                 the sole financial provider for my family, and I just quit my corporate job. This might seem
                                 absurd but hear me out.</p>
@@ -70,19 +73,28 @@
                                 that are created. That is why I quit my job, to help people just like you.</p>
                             <p>If you have an interesting project you'd like to talk about, let me know!</p>
                             <p>Together, we will build something great.</p>
+                            <!-- ABOUT ME MAIN BODY TEXT GO BETWEEN THESE LINES -->
+                            <!-- End of About me panel body -->
                         </div>
+                        <!-- End of About me panel -->
                     </div>
+                    <!-- End of About me section -->
                 </div>
+                <!-- End of About me columns -->
             </div>
-
 
             <!-- Connect with me section -->
             <div class="contact">
+                <!-- Connect with me columns -->
                 <div class="col-md-4">
+                    <!-- Connect with me panel -->
                     <div class="panel panel-default text-center">
+                        <!-- Connect with me pannel header -->
                         <div class="panel-heading">
                             <h2 class="panel-title">Connect with me</h2>
+                            <!-- End of Connect with me pannel header -->
                         </div>
+                        <!-- Connect with me panel body -->
                         <div class="panel-body">
                             <!-- LINKS IN THE CONNECT WITH ME SECTION GO BETWEEN THESE LINES -->
                             <!-- GitHub link -->
@@ -101,28 +113,34 @@
                                 <img class="img-thumbnail img-responsive" src="assets/images/stackoverflow.png" alt="See what I have to say on Stack Overflow">
                             </a>
                             <!-- LINKS IN THE CONNECT WITH ME SECTION GO BETWEEN THESE LINES -->
+                            <!-- End of Connect with me panel body -->
                         </div>
+                        <!-- End of Connect with me pannel -->
                     </div>
+                    <!-- End of Connect with me columns -->
                 </div>
+                <!-- End of connect with me section -->
             </div>
+            <!-- End of first row -->
         </div>
-    </div>
+        <!-- End of main body container -->
+    </main>
 
-
-
-    <!-- Row 2 of 2 (For the footer) -->
-    <!-- <div class="row">
-            <div class="panel panel-primary col-md-12">
-                Footer
-            </div>
-        </div> -->
+    <!-- FOOTER CODE BETWEEN THESE LINES -->
     <footer class="navbar navbar-default navbar-fixed-bottom">
+        <!-- Footer container -->
         <div class="container" id="footerCSS">
+            <!-- Copywright information -->
             <p class="navbar-text text-center">
+                <!-- Link back to portfolio page -->
                 <a href="http://laird.codes" target="_blank">© 2018 - Paul Laird</a>
+                <!-- End of Copywright information -->
             </p>
+            <!-- End of Footer container -->
         </div>
     </footer>
+    <!-- FOOTER CODE BETWEEN THESE LINES -->
+
 </body>
 
 </html>
